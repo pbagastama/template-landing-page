@@ -306,11 +306,12 @@ body#leadsPage {
                         }
                     }
 
-                    select.form-control {
+                    select.form-control,
+                    select.form-select {
                         display: block;
                         width: 100%;
                         height: auto;
-                        padding: .5rem .25rem;
+                        padding: .5rem;
                         font-size: .95rem;
                         color: #707070;
                         border: 1.25px solid #707070;
@@ -433,9 +434,16 @@ body#leadsPage {
 
                 img.ic-quotes {
                     position: absolute;
-                    left: 11.5%;
-                    width: 60px;
-                    top: 0;
+                    left: 5%;
+                    width: 40px;
+                    top: -20px;
+
+                    @media(min-width: 768px){
+                        position: absolute;
+                        left: 11.5%;
+                        width: 60px;
+                        top: 0;
+                    }
                 }
 
                 .text-name {
@@ -559,7 +567,8 @@ body#leadsPage {
                         margin-bottom: 2rem;
                     }
 
-                    .form-control {
+                    .form-control,
+                    .form-select {
                         width: 100%;
                         height: auto;
                         color: #707070;
@@ -689,6 +698,15 @@ body#acquisitionPage {
 
                 @media(min-width: 768px) {
                     width: 60px;
+                }
+            }
+
+            i.bi {
+                font-size: 4.5rem;
+                margin-bottom: 1rem;
+
+                @media(min-width: 768px) {
+                    font-size: 4rem;
                 }
             }
 

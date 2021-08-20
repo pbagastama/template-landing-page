@@ -15,9 +15,9 @@
     <title>Landing Pages - Leads</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
@@ -51,22 +51,23 @@
                 </div>
                 <div class="col-md-4 form-banner">
                     <form class="m-0">
-                        <div class="form-group">
+                        <div class="form-group mb-3">
                             <span>
-                                <i class="far fa-user-circle" aria-hidden="true"></i>
+                                <i class="bi bi-person-circle"></i>
                             </span>
                             <input type="text" class="form-control mont-light" id="nameFormTop" aria-describedby="name"
                                 placeholder="Full Name">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group mb-3">
                             <span>
-                                <i class="far fa-envelope" aria-hidden="true"></i>
+                                <i class="bi bi-envelope"></i>
                             </span>
                             <input type="email" class="form-control mont-light" id="emailFormTop"
                                 aria-describedby="emailHelp" placeholder="name@email.com">
                         </div>
-                        <div class="form-group">
-                            <select class="form-control mont-light" id="exampleFormControlSelect1">
+                        <div class="form-group mb-3">
+                            <select class="form-select mont-light" id="exampleFormControlSelect1"
+                                aria-label="Default select example">
                                 <option>Lorem Ipsum</option>
                                 <option>Lorem Ipsum</option>
                                 <option>Lorem Ipsum</option>
@@ -74,7 +75,9 @@
                                 <option>Lorem Ipsum</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-secondary btn-block mont-light radius-0">Send</button>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-secondary mont-light radius-0">Send</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -98,7 +101,7 @@
                                     <button type="button"
                                         class="btn btn-sm mont-light btn-outline-secondary fs-14">Button</button>
                                     <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        <i class="fas fa-play fs-10"></i>
+                                        <i class="bi bi-play-fill"></i>
                                     </button>
                                 </div>
                             </div>
@@ -118,7 +121,7 @@
                                     <button type="button"
                                         class="btn btn-sm btn-outline-secondary mont-light fs-14">Button</button>
                                     <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        <i class="fas fa-play fs-10"></i>
+                                        <i class="bi bi-play-fill"></i>
                                     </button>
                                 </div>
                             </div>
@@ -138,7 +141,7 @@
                                     <button type="button"
                                         class="btn btn-sm btn-outline-secondary mont-light fs-14">Button</button>
                                     <button type="button" class="btn btn-sm btn-outline-secondary">
-                                        <i class="fas fa-play fs-10"></i>
+                                        <i class="bi bi-play-fill"></i>
                                     </button>
                                 </div>
                             </div>
@@ -220,16 +223,16 @@
             </div>
             <div class="form-bottom">
                 <form class="form-inline">
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-4 px-3">
                         <input type="text" class="form-control mont-light radius-0" id="nameBottom"
                             aria-describedby="name" placeholder="Full Name">
                     </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-4 px-3">
                         <input type="email" class="form-control mont-light radius-0" id="emailBottom"
                             aria-describedby="email" placeholder="name@email.com">
                     </div>
-                    <div class="form-group col-md-4">
-                        <select class="form-control mont-light radius-0" id="selectCustom">
+                    <div class="form-group col-md-4 px-3">
+                        <select class="form-select mont-light radius-0" id="selectCustom">
                             <option>Lorem Ipsum</option>
                             <option>Lorem Ipsum</option>
                             <option>Lorem Ipsum</option>
@@ -238,7 +241,9 @@
                         </select>
                     </div>
                     <div class="col-md-2 text-center">
-                        <button type="submit" class="btn btn-block btn-secondary mont-light radius-0">Send</button>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-secondary mont-light radius-0">Send</button>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -260,12 +265,9 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
         </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
 
